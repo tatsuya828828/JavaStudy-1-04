@@ -1,19 +1,24 @@
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
-		// 2次元(多次元)配列
-		int[][] scores = new int[2][3];
-		scores[0][0] = 40;
-		scores[0][1] = 50;
-		scores[0][2] = 60;
-		scores[1][0] = 70;
-		scores[1][1] = 80;
-		scores[1][2] = 90;
-		System.out.println(scores[0][1]);
+		int[] points = new int[4];
+		double[] weight = new double[5];
+		boolean[] answers = new boolean[3];
+		String[] names = new String[3];
 
-		int[][] scores2 = {{40, 50, 60}, {70, 80, 90}};
-		System.out.println(scores.length);
-		System.out.println(scores[0].length);
-		System.out.println(scores[0][1]);
-		System.out.println(scores[1][2]);
+		int[] moneyList = {121902, 8302, 55100};
+		for(int value: moneyList) {
+			System.out.println(value);
+		}
+
+		int[] numbers = {3, 4, 9};
+		System.out.println("1桁の数字を入力してください");
+		int input = new Scanner(System.in).nextInt();
+		for(int value: numbers) {
+			if(value == input) {
+				System.out.println("あたり！");
+			}
+		}
 	}
 }
